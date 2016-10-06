@@ -2,3 +2,16 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Roboto", helvetica, san-serif;
 
 }
+
+
+#splash {
+    background: #1D1F1F;
+    color: #FFF;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    aside { text-transform: uppercase; }
+    }
