@@ -10,12 +10,16 @@ $pink: #FF087D;
 .flex { display: flex; justify-content: space-around; align-items: center; }
 .fl-col { flex-direction: column; }
 .fl-rw { flex-direction: row; }
-.rw-4 > * {
+.rw-4 {
+    max-width: 80%; 
+    > * {
     width: 22%;
     text-align: center;
     img, svg { width: 4rem; height: auto; padding: 2em 0; }
     justify-content: space-between;
+    &:nth-child(even) { background: lighten($dk-gray, 62); }
     }
+}
 .dark { background: #1D1F1F; }
 .light { background: #FFF; }
 .light .gray, .light .grey { color: $dk-gray; }
