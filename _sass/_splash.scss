@@ -1,17 +1,64 @@
+
+$dk-gray: #555555;
+$lg-gray: #B4B2B3;
+$pink: #FF087D;
+@mixin specialfont { font-family: "roboto", helvetica, arial, san-serif; }
+@mixin shadow {box-shadow: 0px 14px 24px rgba(0, 0, 0, 0.25); }
+
+// util
+
+.flex { display: flex; justify-content: space-around; align-items: center; }
+.fl-col { flex-direction: column; }
+.fl-rw { flex-direction: row; }
+.rw-4 > * {
+    width: 22%;
+    text-align: center;
+    img, svg { width: 4rem; height: auto; padding: 2em 0; }
+    justify-content: space-between;
+    }
+.dark { background: #1D1F1F; }
+.light { background: #FFF; }
+.light .gray, .light .grey { color: $dk-gray; }
+.dark .gray, .dark .grey { color: $lg-gray; }
+.upper { text-transform: uppercase; }
+.shadow { @include shadow }
+
+//
 h1, h2, h3, h4, h5, h6 {
     font-family: "Roboto", helvetica, san-serif;
 
 }
 
+h1, h2 {
+    font-size: 2.5em;
+    font-weight: 300;
+    }
 
+    h1{
+    text-transform: uppercase;
+    color: $lg-gray;
+    strong { color: #FFF; font-weight: bold; }
+    }
+
+    h2, h3, h4 { color: $dk-gray; }
+    h3 { font-weight: bold; font-size: 1em;}
 #splash {
-    background: #1D1F1F;
+
     color: #FFF;
     height: 85vh;
+    text-align: center;
+    aside { text-transform: uppercase; color: $lg-gray; }
+    svg { transform: rotate(-11deg); }
+    a.btn { text-transform: uppercase; color: $pink; width: 25%; min-width: 15rem; padding: 1em; border: .2rem solid $pink; }
+    nav a { font-weight: 300; }
+    strong { color: #fff; }
+    nav { width: 70%; @include specialfont; }
+    }
+
+section {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-
-    aside { text-transform: uppercase; }
+    > * { max-width: 48rem; }
     }

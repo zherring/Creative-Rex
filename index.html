@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section id="splash">
+<section id="splash" class="dark">
 
     <header>
         {% include /cr-logo.svg %}
@@ -12,40 +12,46 @@ layout: default
 
     <a class="btn btn-ol">Say hello</a>
 
-    <nav>
-        What We Offer
-        Recent Work
-        Mission Statement
-        Platforms
+    <nav class="flex fl-rw upper upper gray">
+        <a>What We Offer</a>
+        <a>Recent Work</a>
+        <a>Mission Statement</a>
+        <a>Platforms</a>
     </nav>
 </section>
 
-<section id="specialize">
+<section id="specialize" class="light">
     <h2>We specialize in...</h2>
-    <div>
-        <h3>Product research</h3>
-        We use proven methodology to determine the best product-to-market approach.
-    </div>
-    <div>
-        <h3>UX & UI design</h3>
-        The fun part. Watch your idea begin to take form in sketches, wireframes, mockups and prototypes.
-    </div>
-    <div>
-        <h3>User testing</h3>
-        How do you know if a design is the right one? By testing those results against real potential customers.
-    </div>
-    <div>
-        <h3>Web & app development</h3>
-        We’ll find the right technology for your product and deliver a beautiful, stable finished product.
+    <div class="flex fl-rw rw-4">
+        <div class="flex fl-col">
+            <h3>Product research</h3>
+            {% include research.svg %}
+            We use proven methodology to determine the best product-to-market approach.
+        </div>
+        <div class="flex fl-col">
+            <h3>UX & UI design</h3>
+            {% include ux.svg %}
+            The fun part. Watch your idea begin to take form in sketches, wireframes, mockups and prototypes.
+        </div>
+        <div class="flex fl-col">
+            <h3>User testing</h3>
+            {% include test.svg %}
+            How do you know if a design is the right one? By testing those results against real potential customers.
+        </div>
+        <div class="flex fl-col">
+            <h3>Web & app development</h3>
+            {% include code.svg %}
+            We’ll find the right technology for your product and deliver a beautiful, stable finished product.
+        </div>
     </div>
 </section>
 
 
-<section id="dribbble">
+<section id="dribbble" class="light">
     <h2>Recent Work</h2>
 </section>
 
-<section id="mission-statement">
+<section id="mission-statement" class="light">
     <h2>Compelling design is the result of asking the right questions</h2>
     <p>
         We use research, user testing and and smart work to find our clients the best solutions.
@@ -55,11 +61,11 @@ layout: default
     </p>
 </section>
 
-<section id="expertise">
+<section id="expertise" class="light">
     <h2>The same expertise applied across every platform</h2>
 </section>
 
-<section id="contact">
+<section id="contact" class="dark">
 
 </section>
 <!--
