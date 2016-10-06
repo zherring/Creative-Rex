@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="137px" height="136px" viewBox="0 0 137 136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+        <linearGradient x1="100%" y1="4.15843079%" x2="-8.18275126%" y2="76.1674353%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="74.327923 4.6013986 58.0344828 9.21457059 71.9976428 16.8063128"></polygon>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-5" y="-5" width="26.2934402" height="22.2049142">
+            <rect x="53.0344828" y="-0.398601399" width="26.2934402" height="22.2049142" fill="white"></rect>
+            <use xlink:href="#path-2" fill="black"></use>
+        </mask>
+        <polygon id="path-4" points="0 44.8650295 3.14520474 68.5927939 41.9736665 114.47 67.4467942 122.388494 78.0307112 115.058826 64.0961746 75.7847055 116.04509 65.0186776 124.673357 40.2930166 59.6679688 11.0465813 55.3912985 0 14.9624529 22.4845935 10.6293777 39.889826"></polygon>
+        <mask id="mask-5" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-5" y="-5" width="134.673357" height="132.388494">
+            <rect x="-5" y="-5" width="134.673357" height="132.388494" fill="white"></rect>
+            <use xlink:href="#path-4" fill="black"></use>
+        </mask>
+        <linearGradient x1="89.8922434%" y1="94.3049875%" x2="0%" y2="6.09117494%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-444.000000, -43.000000)">
+            <g id="cr-logo" transform="translate(450.000000, 51.000000)">
+                <g id="Path-3-Copy-9">
+                    <use fill="#FF077E" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <use fill-opacity="0.100000001" fill="url(#linearGradient-1)" fill-rule="evenodd" style="mix-blend-mode: overlay;" xlink:href="#path-2"></use>
+                    <use stroke="#FFFFFF" mask="url(#mask-3)" stroke-width="10" xlink:href="#path-2"></use>
+                </g>
+                <g id="COLOR-Copy-12">
+                    <use fill="#FF077E" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    <use fill-opacity="0.100000001" fill="url(#linearGradient-1)" fill-rule="evenodd" style="mix-blend-mode: overlay;" xlink:href="#path-4"></use>
+                    <use stroke="#FFFFFF" mask="url(#mask-5)" stroke-width="10" xlink:href="#path-4"></use>
+                </g>
+                <path d="M0.862068966,43.8671329 L3.92508492,66.9748562 L27.8262198,58.5051514 L0.862068966,43.8671329 Z" id="Combined-Shape-Copy-63" fill="#BBF0A6" opacity="0.300000012" style="mix-blend-mode: saturation;"></path>
+                <polygon id="Path-16-Copy-9" fill="#62AA47" opacity="0.200000003" style="mix-blend-mode: saturation;" points="44.4327519 35.2657343 28.108531 60.5695118 11.2068966 40.7503858"></polygon>
+                <path d="M4.31034483,69.6713287 L42.3459588,114.611757 L67.1724263,122.329233 L4.31034483,69.6713287 Z" id="Combined-Shape-Copy-54" fill="#5CA942" opacity="0.5" style="mix-blend-mode: saturation;"></path>
+                <path d="M115.67729,64.797979 L116.04509,64.7217551 L124.673357,39.996094 L123.71836,39.5664336 L27.5862069,58.7850891 L115.67729,64.797979 Z" id="Combined-Shape-Copy-59" fill="#BBF0A6" opacity="0.600000024" style="mix-blend-mode: saturation;"></path>
+                <path d="M67.6810421,122.226271 L78.0307112,115.058826 L64.0961746,75.7847055 L116.04509,65.0186776 L116.147849,64.7242072 L27.5862069,59.4825772 L67.6810421,122.226271 Z M44.3186793,18.9230769 L43.8943797,34.1783797 L56.7132358,24.941116 L44.3186793,18.9230769 Z" id="Combined-Shape-Copy-60" fill="#15549F" style="mix-blend-mode: hard-light;"></path>
+                <polygon id="Path-18-Copy-11" fill="#D9F6CE" opacity="0.600000024" style="mix-blend-mode: saturation;" points="55.654802 0 44.1409407 19.519778 15.5172414 22.5738414"></polygon>
+                <path d="M28.4482759,60.2097902 L51.2773282,95.9345676 L65.1045219,99.910858 L45.0071182,67.9378466 L28.4482759,60.2097902 Z" id="Combined-Shape-Copy-61" fill="url(#linearGradient-6)" opacity="0.300000012" style="mix-blend-mode: lighten;"></path>
+                <path d="M123.258658,39.6821491 L59.9116186,11.1818182 L56.8965517,24.831811 L123.258658,39.6821491 Z" id="Combined-Shape-Copy-62" fill="#DAF7CF" opacity="0.600000024" style="mix-blend-mode: saturation;"></path>
+                <polygon id="Path-12-Copy-10" fill="#62AA47" opacity="0.400000006" style="mix-blend-mode: saturation;" points="44.519043 19.7832168 15.5172414 23.0879094 44.0930597 35.0216675"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
