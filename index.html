@@ -15,10 +15,11 @@ layout: default
     </nav>
 </section>
 
-<video id="vid-bg" type="video/mp4" autoplay="true" loop="loop" preload="auto">
-    <source src="res/vid/working.mp4">
-</video>
-
+<div id="vid-container">
+    <video id="vid-bg" type="video/mp4" autoplay="true" loop="loop" preload="auto">
+        <source src="res/vid/working.mp4">
+    </video>
+</div>
 <section id="splash" class="dark">
 
     <header>
@@ -88,20 +89,28 @@ layout: default
     <p></p>
 
     <form>
-        <label for="firstname">First Name</label>
-        <input type="text" id="name" placeholder="first name"></input>
-
-        <label for="lastname">Last Name</label>
-        <input type="text" id="lastname" placeholder="last name"></input>
-
-        <label for="email">Email</label>
-        <input type="text" id="email" placeholder="email"></input>
-
-        <label for="phone">Phone</label>
-        <input type="text" id="phone" placeholder="phone"></input>
-
-        <label for="notes">Message</label>
-        <input type="text" id="notes" placeholder="message"></input>
+        <div class="flex fl-rw rw-2">
+            <div>
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" placeholder="first name"></input>
+            </div>
+            <div>
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" placeholder="last name"></input>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="email"></input>
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" placeholder="phone"></input>
+            </div>
+            <div>
+                <label for="notes">Message</label>
+                <input type="text" id="notes" placeholder="message"></input>
+            </div>
+        </div>
     </form>
 </section>
 <footer></footer>

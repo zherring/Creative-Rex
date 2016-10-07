@@ -32,6 +32,20 @@ element {
     &:nth-child(even) { background: lighten($dk-gray, 62); }
     }
 }
+
+.rw-2 {
+    max-width: 90%;
+    > * {
+    width: 44%;
+    //min-width: 17rem;
+    text-align: center;
+    padding: 1rem;
+    // img, svg { width: 4rem; height: auto; padding: 2em 0; }
+    justify-content: space-between;
+    // &:nth-child(even) { background: lighten($dk-gray, 62); }
+    }
+}
+
 .dark { background: #1D1F1F; }
 .light { background: #FFF; }
 .light .gray, .light .grey { color: $dk-gray; }
@@ -75,7 +89,7 @@ h1, h2 {
     a { color: $dk-gray; text-decoration: none; font-size: .85rem; font-weight: bold; opacity: .7; padding: 1.2rem .5rem; transition: all .1s ease-in-out;
     &:hover { background: lighten($dk-gray, 60); color: black; }
     }
-    a.btn { padding: .35rem; color: $pink; margin-left: .75rem;
+    a.btn { padding: .35rem; color: $blue; margin-left: .75rem; border-color: $blue;
     &:hover {
         //background: black;
         color: black;
@@ -86,7 +100,7 @@ h1, h2 {
 a.btn { font-weight: bold; text-transform: uppercase; color: $pink; border: .2rem solid $pink; text-decoration: none;}
 
 
-.sticky { position: fixed; top: -4rem; width: 100%; }
+.sticky { position: fixed; top: -10rem; width: 100%; }
 #splash {
     @include background-opacity(#1D1F1F, 0.9);
     color: #FFF;
@@ -95,12 +109,18 @@ a.btn { font-weight: bold; text-transform: uppercase; color: $pink; border: .2re
     text-align: center;
     aside { text-transform: uppercase; color: $lg-gray; }
     svg { transform: rotate(-11deg); }
-    a.btn { width: 35%; min-width: 15rem; padding: 1rem; }
+    a.btn { width: 35%; min-width: 15rem; padding: 1rem; transition: all .1s ease-in-out;
+    &:hover {
+        color: #FFF;
+        border-color: #FFF;
+        }
+    }
     nav a { font-weight: 300; }
     strong { color: #fff; }
     nav { width: 70%; @include specialfont;
         a {
             font-size: $small-font-size;
+            // font-weight: bold;
             color: $lg-gray;
             &:hover { color: white;  }
             }
@@ -116,23 +136,19 @@ a.btn { font-weight: bold; text-transform: uppercase; color: $pink; border: .2re
         bottom: 15vh;
      }
 }
-
-#vid-bg {
+#vid-container {
+    overflow: hidden;
+    width: 100%;
     position: absolute;
-    min-width: 100%;
     height: 85vh;
     max-height: 65rem;
-    width: auto;
-    height: auto;
-    z-index: -1;
-    top: -14rem;
-    overflow: hidden;
+    z-index: -10;
 
-    position: absolute;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
+    }
+#vid-bg {
+
+    width: 100vmax;
+    transform: scaleX(-1);
 
 }
 
