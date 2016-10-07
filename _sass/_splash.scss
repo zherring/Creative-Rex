@@ -7,14 +7,25 @@ $pink: #FF087D;
 
 // util
 
-.flex { display: flex; justify-content: space-around; align-items: center; }
+@mixin background-opacity($color, $opacity: 0.3) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
+}
+
+element {
+     @include background-opacity(#333, 0.5);
+}
+
+.flex { display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; }
 .fl-col { flex-direction: column; }
 .fl-rw { flex-direction: row; }
 .rw-4 {
-    max-width: 80%;
+    max-width: 90%;
     > * {
     width: 22%;
+    //min-width: 17rem;
     text-align: center;
+    padding: 1rem;
     img, svg { width: 4rem; height: auto; padding: 2em 0; }
     justify-content: space-between;
     &:nth-child(even) { background: lighten($dk-gray, 62); }
@@ -46,15 +57,28 @@ h1, h2 {
 
     h2, h3, h4 { color: $dk-gray; }
     h3 { font-weight: bold; font-size: 1em;}
-#splash {
 
+//nav
+#main-nav {
+    height: 4rem;
+    background: white;
+    z-index: 10;
+    @include shadow;
+    overflow: hidden;
+    transition: all .1s ease-in-out;
+    &.show { top: 0rem; }
+    }
+
+.sticky { position: fixed; top: -4rem; width: 100%; }
+#splash {
+    @include background-opacity(#1D1F1F, 0.9);
     color: #FFF;
     height: 85vh;
-    max-height: 55rem;
+    max-height: 65rem;
     text-align: center;
     aside { text-transform: uppercase; color: $lg-gray; }
     svg { transform: rotate(-11deg); }
-    a.btn { font-weight: bold; text-transform: uppercase; color: $pink; width: 35%; min-width: 15rem; padding: 1em; border: .2rem solid $pink; }
+    a.btn { font-weight: bold; text-transform: uppercase; color: $pink; width: 35%; min-width: 15rem; padding: 1em; border: .2rem solid $pink; text-decoration: none;}
     nav a { font-weight: 300; }
     strong { color: #fff; }
     nav { width: 70%; @include specialfont;
@@ -63,7 +87,18 @@ h1, h2 {
             }
 
          }
-    }
+}
+
+#vid-bg {
+    position: absolute;
+    min-width: 100%;
+    height: 85vh;
+    max-height: 55rem;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    top: -14rem;
+}
 
 section {
     display: flex;
