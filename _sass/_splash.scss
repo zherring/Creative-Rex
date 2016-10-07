@@ -54,7 +54,7 @@ h1, h2 {
     text-align: center;
     aside { text-transform: uppercase; color: $lg-gray; }
     svg { transform: rotate(-11deg); }
-    a.btn { text-transform: uppercase; color: $pink; width: 25%; min-width: 15rem; padding: 1em; border: .2rem solid $pink; }
+    a.btn { font-weight: bold; text-transform: uppercase; color: $pink; width: 35%; min-width: 15rem; padding: 1em; border: .2rem solid $pink; }
     nav a { font-weight: 300; }
     strong { color: #fff; }
     nav { width: 70%; @include specialfont; }
