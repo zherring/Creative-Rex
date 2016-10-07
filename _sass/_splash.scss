@@ -2,6 +2,7 @@
 $dk-gray: #555555;
 $lg-gray: #B4B2B3;
 $pink: #FF087D;
+$blue: #240099;
 @mixin specialfont { font-family: "roboto", helvetica, arial, san-serif; }
 @mixin shadow {box-shadow: 0px 14px 24px rgba(0, 0, 0, 0.25); }
 
@@ -60,7 +61,7 @@ h1, h2 {
 
 //nav
 #main-nav {
-    height: 4rem;
+    // height: 4rem;
     background: white;
     z-index: 10;
     font-size: $small-font-size;
@@ -69,9 +70,20 @@ h1, h2 {
     overflow: hidden;
     transition: all .1s ease-in-out;
     &.show { top: 0rem; }
-    #logo { overflow: hidden; height: auto; margin-top: 5rem;}
-    a { color: $dk-gray; text-decoration: none; font-size: .85rem; font-weight: bold; opacity: .7; }
+    #logo { overflow: hidden; height: auto; height: 3.5rem;}
+    a { color: $dk-gray; text-decoration: none; font-size: .85rem; font-weight: bold; opacity: .7; padding: 1.2rem .5rem; transition: all .1s ease-in-out;
+    &:hover { background: lighten($dk-gray, 60); color: black; }
     }
+    a.btn { padding: .35rem; color: $pink; margin-left: .75rem;
+    &:hover {
+        //background: black;
+        color: black;
+        border-color: black; }
+    }
+}
+
+a.btn { font-weight: bold; text-transform: uppercase; color: $pink; border: .2rem solid $pink; text-decoration: none;}
+
 
 .sticky { position: fixed; top: -4rem; width: 100%; }
 #splash {
@@ -82,11 +94,13 @@ h1, h2 {
     text-align: center;
     aside { text-transform: uppercase; color: $lg-gray; }
     svg { transform: rotate(-11deg); }
-    a.btn { font-weight: bold; text-transform: uppercase; color: $pink; width: 35%; min-width: 15rem; padding: 1em; border: .2rem solid $pink; text-decoration: none;}
+    a.btn { width: 35%; min-width: 15rem; padding: 1rem; }
     nav a { font-weight: 300; }
     strong { color: #fff; }
     nav { width: 70%; @include specialfont;
-        a { cursor: pointer;
+        a {
+            font-size: $small-font-size;
+            color: $lg-gray; 
             &:hover { color: white;  }
             }
 

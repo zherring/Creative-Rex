@@ -23,6 +23,8 @@ $grey-color-dark:  darken($grey-color, 25%);
 body, html { margin: 0; padding: 0;}
 body { font-family: "helvetica", "arial", san-serif; font-size: $base-font-size; text-align: left;}
 * { box-sizing: border-box; }
+
+
 // // Width of the content area
 // $content-width:    800px;
 //
@@ -40,3 +42,5 @@ body { font-family: "helvetica", "arial", san-serif; font-size: $base-font-size;
 
 // Import partials from the `minima` theme.
 @import "splash";
+
+a { text-decoration: none; color: $blue; }

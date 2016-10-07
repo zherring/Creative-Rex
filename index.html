@@ -2,16 +2,18 @@
 layout: default
 ---
 
-<nav id="main-nav" class="sticky gray flex fl-rw upper">
+<section id="main-nav" class="sticky gray flex fl-rw upper">
     <div id="logo">
         {% include /cr-logo.svg %}
     </div>
-    <a href="#specialize">What We Offer</a>
-    <a href="#dribbble">Recent Work</a>
-    <a href="#mission-statement">Mission Statement</a>
-    <a href="#platform">Platforms</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <nav class="flex fl-rw">
+        <a href="#specialize">What We Offer</a>
+        <a href="#dribbble">Recent Work</a>
+        <a href="#mission-statement">Mission Statement</a>
+        <a href="#platform">Platforms</a>
+        <a href="#contact" class="btn btn-ol">Contact</a>
+    </nav>
+</section>
 
 <video id="vid-bg" type="video/mp4" autoplay="true" loop="loop" preload="auto">
     <source src="res/vid/working.mp4">
@@ -28,10 +30,10 @@ layout: default
     <a href="#contact" class="btn btn-ol">Let's talk about your project</a>
 
     <nav class="flex fl-rw upper upper gray">
-        <a>What We Offer</a>
-        <a>Recent Work</a>
-        <a>Mission Statement</a>
-        <a>Platforms</a>
+        <a href="#specialize">What We Offer</a>
+        <a href="#dribbble">Recent Work</a>
+        <a href="#mission-statement">Mission Statement</a>
+        <a href="#platform">Platforms</a>
     </nav>
 </section>
 
