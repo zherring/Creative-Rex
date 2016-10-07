@@ -59,6 +59,7 @@ h1, h2 {
     h2, h3, h4 { color: $dk-gray; }
     h3 { font-weight: bold; font-size: 1em;}
 
+#container { width: 100%; overflow: hidden; }
 //nav
 #main-nav {
     // height: 4rem;
@@ -100,7 +101,7 @@ a.btn { font-weight: bold; text-transform: uppercase; color: $pink; border: .2re
     nav { width: 70%; @include specialfont;
         a {
             font-size: $small-font-size;
-            color: $lg-gray; 
+            color: $lg-gray;
             &:hover { color: white;  }
             }
 
@@ -112,7 +113,7 @@ a.btn { font-weight: bold; text-transform: uppercase; color: $pink; border: .2re
         background: linear-gradient(90.2deg, #FF087E 12.37%, #2B059E 98.93%), linear-gradient(0deg, #C4C4C4, #C4C4C4);
         height: .35rem;
         position: absolute;
-        bottom: 7rem;
+        bottom: 15vh;
      }
 }
 
@@ -120,11 +121,19 @@ a.btn { font-weight: bold; text-transform: uppercase; color: $pink; border: .2re
     position: absolute;
     min-width: 100%;
     height: 85vh;
-    max-height: 55rem;
+    max-height: 65rem;
     width: auto;
     height: auto;
     z-index: -1;
     top: -14rem;
+    overflow: hidden;
+
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+
 }
 
 section {
