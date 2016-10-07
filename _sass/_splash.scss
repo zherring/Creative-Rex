@@ -83,13 +83,17 @@ h1, h2 {
     text-decoration: none;
     @include shadow;
     overflow: hidden;
-    transition: all .1s ease-in-out;
+    transition: all .2s ease-in-out;
     &.show { top: 0rem; }
-    #logo { overflow: hidden; height: auto; height: 3.5rem;}
+    #logo { overflow: hidden; height: auto; height: 3.5rem; transition: all .15s ease-in-out;
+        svg { transition: all .15s ease-in-out; }
+        a { opacity: 1; }
+        &:hover svg { transform: rotateZ(-10deg); }
+    }
     a { color: $dk-gray; text-decoration: none; font-size: .85rem; font-weight: bold; opacity: .7; padding: 1.2rem .5rem; transition: all .1s ease-in-out;
     &:hover { background: lighten($dk-gray, 60); color: black; }
     }
-    a.btn { padding: .35rem; color: $blue; margin-left: .75rem; border-color: $blue;
+    a.btn { padding: .35rem; color: $blue; margin-left: .75rem; border-color: $blue; opacity: 1;
     &:hover {
         //background: black;
         color: black;
@@ -159,3 +163,5 @@ section {
     align-items: center;
     > * { max-width: 48rem; }
     }
+
+#contact { height: 100vh; }
