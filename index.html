@@ -2,8 +2,10 @@
 layout: default
 ---
 
-<nav id="main-nav" class="sticky">
-    {% include /cr-logo.svg %}
+<nav id="main-nav" class="sticky gray flex fl-rw upper">
+    <div id="logo">
+        {% include /cr-logo.svg %}
+    </div>
     <a href="#specialize">What We Offer</a>
     <a href="#dribbble">Recent Work</a>
     <a href="#mission-statement">Mission Statement</a>
@@ -84,9 +86,20 @@ layout: default
     <p></p>
 
     <form>
-        <field for="name">
-        <input type="text" id="name" placeholder="name"></input>
+        <label for="firstname">First Name</label>
+        <input type="text" id="name" placeholder="first name"></input>
 
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" placeholder="last name"></input>
+
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="email"></input>
+
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" placeholder="phone"></input>
+
+        <label for="notes">Message</label>
+        <input type="text" id="notes" placeholder="message"></input>
     </form>
 </section>
 <footer></footer>

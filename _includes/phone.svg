@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="43px" height="78px" viewBox="0 0 43 78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.2 (33826) - http://www.bohemiancoding.com/sketch -->
+    <title>phone</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="43" height="78" rx="1"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="phone">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#FF087E" xlink:href="#path-1"></use>
+            <rect id="Rectangle-4-Copy-6" fill="#F92381" mask="url(#mask-2)" x="0" y="0" width="43" height="78" rx="1"></rect>
+            <rect id="Rectangle-4-Copy-3" fill="#AB269D" mask="url(#mask-2)" x="3" y="4" width="37" height="68" rx="1"></rect>
+            <polygon id="Path-3-Copy-5" fill="#565656" style="mix-blend-mode: darken;" opacity="0.229999989" mask="url(#mask-2)" transform="translate(2.811403, 34.379584) rotate(90.000000) translate(-2.811403, -34.379584) " points="-37.9497704 6.56818072 48.1909875 62.1909875 -42.5681807 62.1909875"></polygon>
+            <polygon id="Path-3-Copy-6" fill="#565656" style="mix-blend-mode: darken;" opacity="0.100000001" mask="url(#mask-2)" transform="translate(-6.500000, 69.806152) rotate(-90.000000) translate(6.500000, -69.806152) " points="-53.0336916 8.30615214 45.3061521 131.306152 -58.3061521 131.306152"></polygon>
+        </g>
+    </g>
+</svg>

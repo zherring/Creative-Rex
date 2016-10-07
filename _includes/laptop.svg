@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="154px" height="110px" viewBox="0 0 154 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.2 (33826) - http://www.bohemiancoding.com/sketch -->
+    <title>laptop</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M134,81.2706099 L134,1.0046646 C134,0.446562648 133.550998,0 132.997125,0 L21.0028751,0 C20.44746,0 20,0.449803662 20,1.0046646 L20,81.2689134 C19.7402829,81.3996202 19.5059281,81.5681826 19.3459349,81.7521748 L0.65406505,103.247825 C0.298243463,103.65702 0,104.443586 0,104.990778 L0,110 L154,110 L154,104.990778 C154,104.450975 153.707165,103.66324 153.345935,103.247825 L134.654065,81.7521748 C134.496119,81.5705374 134.261048,81.4019468 134,81.2706099 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="laptop">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Combined-Shape" fill="#FF087E" xlink:href="#path-1"></use>
+            <rect id="Rectangle-4" fill="#F92381" mask="url(#mask-2)" x="20" y="0" width="114" height="83" rx="1"></rect>
+            <rect id="Rectangle-5" fill="#AB269D" mask="url(#mask-2)" x="23" y="3" width="106" height="75" rx="1"></rect>
+            <polygon id="Path-3" fill="#565656" style="mix-blend-mode: darken;" opacity="0.300000012" mask="url(#mask-2)" points="13.2724605 27 111.612304 90.5 8 90.5"></polygon>
+            <polygon id="Path-3-Copy" fill="#565656" style="mix-blend-mode: darken;" opacity="0.300000012" mask="url(#mask-2)" transform="translate(78.500000, 38.806152) rotate(-90.000000) translate(-78.500000, -38.806152) " points="31.9663084 -22.6938479 130.306152 100.306152 26.6938479 100.306152"></polygon>
+            <path d="M19.3459349,81.7521748 C19.7071651,81.3367601 20.44746,81 21.0028751,81 L132.997125,81 C133.550998,81 134.298243,81.34298 134.654065,81.7521748 L153.345935,103.247825 C153.707165,103.66324 154,104.450975 154,104.990778 L154,110 L0,110 L0,104.990778 C0,104.443586 0.298243463,103.65702 0.65406505,103.247825 L19.3459349,81.7521748 Z" id="Rectangle-4-Copy" fill="#F92381" mask="url(#mask-2)"></path>
+            <polygon id="Path-3-Copy-2" fill="#565656" style="mix-blend-mode: darken;" opacity="0.200000003" mask="url(#mask-2)" points="-9.72753947 70 88.6123043 133.5 -15 133.5"></polygon>
+            <polygon id="Path-3-Copy-3" fill="#565656" style="mix-blend-mode: darken;" opacity="0.129999995" mask="url(#mask-2)" transform="translate(104.950647, 133.928082) rotate(147.000000) translate(-104.950647, -133.928082) " points="62.2445161 102.178082 160.58436 165.678082 56.9720556 165.678082 49.3169341 160.706788"></polygon>
+            <rect id="Rectangle-6" fill="#565656" style="mix-blend-mode: darken;" opacity="0.300000012" mask="url(#mask-2)" x="0" y="105" width="154" height="6"></rect>
+        </g>
+    </g>
+</svg>

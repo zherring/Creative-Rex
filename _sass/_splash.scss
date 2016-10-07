@@ -63,10 +63,14 @@ h1, h2 {
     height: 4rem;
     background: white;
     z-index: 10;
+    font-size: $small-font-size;
+    text-decoration: none;
     @include shadow;
     overflow: hidden;
     transition: all .1s ease-in-out;
     &.show { top: 0rem; }
+    #logo { overflow: hidden; height: auto; margin-top: 5rem;}
+    a { color: $dk-gray; text-decoration: none; font-size: .85rem; font-weight: bold; opacity: .7; }
     }
 
 .sticky { position: fixed; top: -4rem; width: 100%; }
@@ -87,6 +91,15 @@ h1, h2 {
             }
 
          }
+     &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        background: linear-gradient(90.2deg, #FF087E 12.37%, #2B059E 98.93%), linear-gradient(0deg, #C4C4C4, #C4C4C4);
+        height: .35rem;
+        position: absolute;
+        bottom: 7rem;
+     }
 }
 
 #vid-bg {
