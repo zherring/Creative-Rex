@@ -1,0 +1,13 @@
+<svg width="706" height="431" viewBox="0 0 706 431" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>phil-bg</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1366 313)" figma:type="canvas">
+<rect x="1366" y="-313" width="706" height="431" fill="#E5E5E5"/>
+<g id="phil-bg" style="mix-blend-mode:normal;isolation:isolate;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="matrix(-0.999675 0.0254915 0.0487302 0.998812 2051.42 -315.584)" fill="#22E7F9" fill-opacity="0.7" style="mix-blend-mode:multiply;"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 412.632L 705.801 416.078L 652.248 0.330375L 111.328 0L 0 412.632Z"/>
+</defs>
+</svg>
