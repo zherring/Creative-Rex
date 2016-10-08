@@ -73,6 +73,22 @@ h1, h2 {
     h2, h3, h4 { color: $dk-gray; }
     h3 { font-weight: bold; font-size: 1em;}
 
+a.btn {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $pink;
+  border: .2rem solid $pink;
+  text-decoration: none;
+  padding: .75em 2em;
+  box-shadow: 0em 0 0 $pink inset, 0em 0 0 $pink inset, 0 0 0 rgba(0,0,0,.1);
+  -webkit-transition: .15s ease-out;
+  transition: .15s ease-out;
+}
+a.btn:hover {
+  color: white;
+  box-shadow: -10em 0 0 $pink inset, 10em 0 0 $pink inset, 0 4px 14px rgba(0,0,0,.2);
+}
+
 #container { width: 100%; overflow: hidden; }
 //nav
 #main-nav {
@@ -90,18 +106,18 @@ h1, h2 {
         a { opacity: 1; }
         &:hover svg { transform: rotateZ(-10deg); }
     }
-    a { color: $dk-gray; text-decoration: none; font-size: .85rem; font-weight: bold; opacity: .7; padding: 1.2rem .5rem; transition: all .1s ease-in-out;
-    &:hover { background: lighten($dk-gray, 60); color: black; }
+    a:not(.btn) { color: $dk-gray; text-decoration: none; font-size: .85rem; font-weight: bold; opacity: .7; padding: 1.2rem .5rem; transition: all .1s ease-in-out;
+      &:hover { background: lighten($dk-gray, 60); color: black; }
     }
-    a.btn { padding: .35rem; color: $blue; margin-left: .75rem; border-color: $blue; opacity: 1;
+    a.btn { padding: .35rem;  margin-left: .75rem;
     &:hover {
         //background: black;
-        color: black;
-        border-color: black; }
+        //color: black;
+        //border-color: black;
+     }
     }
 }
 
-a.btn { font-weight: bold; text-transform: uppercase; color: $pink; border: .2rem solid $pink; text-decoration: none;}
 
 
 .sticky { position: fixed; top: -10rem; width: 100%; }
@@ -113,11 +129,8 @@ a.btn { font-weight: bold; text-transform: uppercase; color: $pink; border: .2re
     text-align: center;
     aside { text-transform: uppercase; color: $lg-gray; }
     svg { transform: rotate(-11deg); }
-    a.btn { width: 35%; min-width: 15rem; padding: 1rem; transition: all .1s ease-in-out;
-    &:hover {
-        color: #FFF;
-        border-color: #FFF;
-        }
+    a.btn { width: 35%; min-width: 15rem; padding: 1rem;
+
     }
     nav a { font-weight: 300; }
     strong { color: #fff; }
