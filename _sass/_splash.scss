@@ -188,11 +188,25 @@ section {
     height: 85vh;
     background: url("../img/mission-bg.jpg");
     background-size: cover;
-}
+
+    #m-content {
+        background: url('../img/phil-bg.svg');
+        background-size: contain;
+        background-position: -110px;
+        padding: 2em;
+        background-repeat: no-repeat;
+        padding-right: 12rem;
+        margin-left: -10rem;
+        padding-left: 1.7rem;
+        }
+
+    }
 
 
-@media (min-width: 1040px) {
+@media (min-width: 1150px) {
   #vid-bg {
-    height: 100vmin;
+    //height: 100vmin;
+    height: auto;
+    width: 100vw;
   }
 }
