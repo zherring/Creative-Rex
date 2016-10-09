@@ -109,7 +109,7 @@ a.btn:hover {
     a:not(.btn) { color: $dk-gray; text-decoration: none; font-size: .85rem; font-weight: bold; opacity: .7; padding: 1.2rem .5rem; transition: all .1s ease-in-out;
       &:hover { background: lighten($dk-gray, 60); color: black; }
     }
-    a.btn { padding: .35rem;  margin-left: .75rem;
+    a.btn { padding: .35rem;  margin-left: .75rem; font-size: .75rem;
     &:hover {
         //background: black;
         //color: black;
@@ -164,7 +164,8 @@ a.btn:hover {
     }
 #vid-bg {
 
-    width: 100vmax;
+    //width: 100vmax;
+    height: 85vmax;
     transform: scaleX(-1);
 
 }
@@ -187,4 +188,11 @@ section {
     height: 85vh;
     background: url("../img/mission-bg.jpg");
     background-size: cover;
+}
+
+
+@media (min-width: 1040px) {
+  #vid-bg {
+    height: 100vmin;
+  }
 }
