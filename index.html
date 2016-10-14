@@ -66,12 +66,30 @@ layout: default
 </section>
 
 
-<section id="dribbble" class="light">
-    <h2>Recent Work</h2>
+<section id="work" class="light fl-rw">
+    <div id="work-content" class="c-left">
+        <h2>Recent Work</h2>
+        <h3>Simple Interval</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet tincidunt nunc, ut congue augue. Nulla et sodales nisl, eu porttitor felis. Quisque consequat risus dolor, non blandit magna imperdiet non. Curabitur in ex aliquam, facilisis est eget, lobortis nunc. Nam nec enim quis urna iaculis aliquam.
+        </p>
+        <p>See more work on <a href="dribbble.com/creativerexco" target="_blank">Dribbbble</a></p>
+    </div>
+    <div id="work-splash" class="c-right">
+        &nbsp;
+    </div>
 </section>
 
-<section id="mission-statement" class="light">
-    <div id="m-content">
+<section id="platform" class="light shadow">
+    <h2>The same expertise applied across every platform</h2>
+
+
+
+</section>
+
+
+<section id="mission-statement" class="light fl-rw">
+    <div id="m-content" class="c-left">
         <h2>Compelling design is the result of asking the right questions</h2>
         <p>
             We use research, user testing and and smart work to find our clients the best solutions.
@@ -81,13 +99,9 @@ layout: default
         </p>
     </div>
 
-</section>
-
-<section id="platform" class="light shadow">
-    <h2>The same expertise applied across every platform</h2>
-
-
-
+    <div id="m-splash" class="c-right">
+        &nbsp;
+    </div>
 </section>
 
 <section id="contact" class="dark">
@@ -113,9 +127,15 @@ layout: default
                 <label for="phone">phone</label>
             </div> -->
             <div>
-                <input type="text" id="notes" placeholder="message" required></input>
+                <input type="text" id="phone" placeholder="phone" required></input>
+                <label for="phone">phone</label>
+            </div>
+
+            <div id="message">
+                <textarea type="textbox" id="notes" placeholder="message" required></textarea>
                 <label for="notes">message</label>
             </div>
+            <button action="send" class="btn btn-o">send</a>
         </div>
     </form>
 </section>

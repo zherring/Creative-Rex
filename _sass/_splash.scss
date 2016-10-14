@@ -1,8 +1,10 @@
 
-$dk-gray: #555555;
-$lg-gray: #B4B2B3;
+$gray-dk: #555555;
+$gray-lg: #B4B2B3;
 $pink: #FF087D;
 $blue: #240099;
+$blue-lg: #EAE9F5;
+$white: #fff;
 @mixin specialfont { font-family: "roboto", helvetica, arial, san-serif; }
 @mixin shadow {box-shadow: 0px 14px 24px rgba(0, 0, 0, 0.25); }
 
@@ -21,20 +23,25 @@ element {
 .fl-col { flex-direction: column; }
 .fl-rw { flex-direction: row; }
 .rw-4 {
-    max-width: 90%;
+    max-width: 100%;
     > * {
-    width: 22%;
+    width: 25%;
+    height: 43vh;
     //min-width: 17rem;
     text-align: center;
     padding: 1rem;
+    border: 1px solid $blue-lg;
+    border-right: none transparent;
+
+    &:last-child { border-right:  1px solid $blue-lg; }
     img, svg { width: 4rem; height: auto; padding: 2em 0; }
     justify-content: space-between;
-    &:nth-child(even) { background: lighten($dk-gray, 62); }
+    // &:nth-child(even) { background: lighten($gray-dk, 62); }
     }
 }
 
 .rw-2 {
-    max-width: 90%;
+    //max-width: 90%;
     > * {
     width: 44%;
     //min-width: 17rem;
@@ -42,16 +49,20 @@ element {
     padding: 1rem;
     // img, svg { width: 4rem; height: auto; padding: 2em 0; }
     justify-content: space-between;
-    // &:nth-child(even) { background: lighten($dk-gray, 62); }
+    // &:nth-child(even) { background: lighten($gray-dk, 62); }
     }
 }
 
 .dark { background: #1D1F1F; }
 .light { background: #FFF; }
-.light .gray, .light .grey { color: $dk-gray; }
-.dark .gray, .dark .grey { color: $lg-gray; }
+.light .gray, .light .grey { color: $gray-dk; }
+.dark .gray, .dark .grey { color: $gray-lg; }
 .upper { text-transform: uppercase; }
 .shadow { @include shadow }
+.txt-left { text-align: left; }
+
+.c-left { max-width: 25em; }
+.c-right { flex-grow: 1; width: auto; }
 
 //
 h1, h2, h3, h4, h5, h6 {
@@ -66,14 +77,14 @@ h1, h2 {
 
     h1{
     text-transform: uppercase;
-    color: $lg-gray;
+    color: $gray-lg;
     strong { color: #FFF; font-weight: bold; }
     }
 
-    h2, h3, h4 { color: $dk-gray; }
+    h2, h3, h4 { color: $gray-dk; }
     h3 { font-weight: bold; font-size: 1em;}
 
-a.btn {
+.btn {
   font-weight: bold;
   text-transform: uppercase;
   color: $pink;
@@ -83,18 +94,18 @@ a.btn {
   box-shadow: 0em 0 0 $pink inset, 0em 0 0 $pink inset, 0 0 0 rgba(0,0,0,.1);
   -webkit-transition: .2s ease-out;
   transition: .2s ease-out;
-  white-space: nowrap;
+ $white-space: nowrap;
 }
-a.btn:hover {
-  color: white;
-  box-shadow: -20em 0 0 $pink inset, 20em 0 0 $pink inset, 0 4px 14px rgba(0,0,0,.2);
+.btn:hover {
+  color: $white;
+  box-shadow: -25em 0 0 $pink inset, 25em 0 0 $pink inset, 0 4px 14px rgba(0,0,0,.2);
 }
 
 #container { width: 100%; overflow: hidden; }
 //nav
 #main-nav {
     // height: 4rem;
-    background: white;
+    background:$white;
     z-index: 10;
     font-size: $small-font-size;
     text-decoration: none;
@@ -107,10 +118,10 @@ a.btn:hover {
         a { opacity: 1; }
         &:hover svg { transform: rotateZ(-10deg); }
     }
-    a:not(.btn) { color: $dk-gray; text-decoration: none; font-size: .85rem; font-weight: bold; opacity: .7; padding: 1.2rem .5rem; transition: all .1s ease-in-out;
-      &:hover { background: lighten($dk-gray, 60); color: black; }
+    a:not(.btn) { color: $gray-dk; text-decoration: none; font-size: .85rem; font-weight: bold; opacity: .7; padding: 1.2rem .5rem; transition: all .1s ease-in-out;
+      &:hover { background: lighten($gray-dk, 60); color: black; }
     }
-    a.btn { padding: .35rem;  margin-left: .75rem; font-size: .75rem;
+    .btn { padding: .35rem;  margin-left: .75rem; font-size: .75rem;
     &:hover {
         //background: black;
         //color: black;
@@ -128,19 +139,19 @@ a.btn:hover {
     height: 85vh;
     max-height: 65rem;
     text-align: center;
-    aside { text-transform: uppercase; color: $lg-gray; }
+    aside { text-transform: uppercase; color: $gray-lg; }
     svg { transform: rotate(-11deg); }
-    a.btn { min-width: 15rem; padding: 1rem;
+    .btn { min-width: 15rem; padding: 1rem;
 
     }
     nav a { font-weight: 300; }
-    strong { color: #fff; }
+    strong { color: #fff; font-style: italic;}
     nav { width: 70%; @include specialfont;
         a {
             font-size: $small-font-size;
             // font-weight: bold;
-            color: $lg-gray;
-            &:hover { color: white;  }
+            color: $gray-lg;
+            &:hover { color:$white;  }
             }
 
          }
@@ -182,16 +193,15 @@ section {
 #contact {
   padding: 10vh 0 50vh 0;
   background-image: url(/img/charcoal.svg);
-  background-position: center 60vh;
+  background-position: center 122vh;
   background-repeat: no-repeat;
   background-color: #0A0F12;
 }
 
 /* --- Contact Form */
 #contact form {
-  .rw-2 > * {text-align: left;}
   div {position: relative;}
-  input {
+  input, textarea {
     background: none;
     border: 0px solid transparent;
 
@@ -199,8 +209,8 @@ section {
     padding: .25em;
     font-size: 1em;
     border-bottom: 2px solid rgba(white, .4);
-    //color: white;
-    color: white;
+    //color:$white;
+    color:$white;
     width: 100%;
     &:focus,
     &:valid {
@@ -222,8 +232,10 @@ section {
     padding: .25em;
     color: rgba(white, .5);
     transition: .25s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+    text-align: left;
   }
-  input {
+  button { background: none; width: 91%; font-size: 1rem; cursor: pointer; }
+  input, textarea {
     &:focus,
     &:valid {
       & ~ label {
@@ -244,6 +256,16 @@ section {
     //   &::-moz-placeholder  {color: rgba(white, .5);}
     //   &:-ms-input-placeholder  {color: rgba(white, .5);}
     // }
+
+    #message {
+    width: 95%;
+    margin-top: 1em;
+    }
+
+    textarea {
+        border: 2px solid rgba(255, 255, 255, 0.4);
+        height: 20em;
+    }
 }
 
 
@@ -253,18 +275,11 @@ section {
 
 #mission-statement {
     height: 85vh;
-    background: url("../img/mission-bg.jpg");
+    //background: url("../img/mission-bg.jpg");
     background-size: cover;
 
     #m-content {
-        background: url('../img/phil-bg.svg');
-        background-size: contain;
-        background-position: -110px;
-        padding: 2em;
-        background-repeat: no-repeat;
-        padding-right: 12rem;
-        margin-left: -10rem;
-        padding-left: 1.7rem;
+        background: $white;
         }
 
     }
