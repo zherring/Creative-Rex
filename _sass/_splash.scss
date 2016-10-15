@@ -147,6 +147,7 @@ h1, h2 {
     color: #FFF;
     height: 85vh;
     max-height: 65rem;
+    position: relative;
     text-align: center;
     aside { text-transform: uppercase; color: $gray-lg; }
     svg { transform: rotate(-11deg); }
@@ -164,15 +165,27 @@ h1, h2 {
             }
 
          }
-     &::after {
-        content: "";
-        display: block;
-        width: 100%;
-        background: linear-gradient(90.2deg, #FF087E 12.37%, #2B059E 98.93%), linear-gradient(0deg, #C4C4C4, #C4C4C4);
-        height: .35rem;
+
+     #splash-shard-left {
         position: absolute;
-        bottom: 15vh;
+        left: -4rem;
+        bottom: 0;
      }
+    }
+
+.color-stripe {
+    overflow: hidden;
+        position: relative;
+    &::after {
+       content: "";
+       display: block;
+       width: 100%;
+       background: linear-gradient(90.2deg, #FF087E 12.37%, #2B059E 98.93%), linear-gradient(0deg, #C4C4C4, #C4C4C4);
+       height: .35rem;
+       position: absolute;
+       bottom: 0;
+       left: 0;
+    }
 }
 #vid-container {
     overflow: hidden;
@@ -283,6 +296,7 @@ section {
     width: 100%;
     background: $offwhite;
 
+
     > div {
         background: $white;
         padding: 1rem;
@@ -295,11 +309,17 @@ section {
 
 #mission-statement {
     height: 85vh;
-    //background: url("../img/mission-bg.jpg");
+    background:linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 49%), url("../img/laptop-bg.jpg");
     background-size: cover;
+    justify-content: flex-start;
+    //box-shadow: inset 0 -1rem 40rem $white;
+
+    //background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 49%);
 
     #m-content {
         background: $white;
+        height: 85vh;
+        padding: 1rem;
         }
 
     }

@@ -1,0 +1,22 @@
+<svg width="158" height="202" viewBox="0 0 158 202" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>splash-shard-left</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-7865 616)" figma:type="canvas">
+<g id="splash-shard-left" style="mix-blend-mode:normal;" filter="url(#filter0_d)" figma:type="vector">
+<use xlink:href="#path0_fill" transform="matrix(-0.296674 -0.954979 0.954979 -0.296674 7734.53 -440.64)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" filterUnits="userSpaceOnUse" x="7865" y="-616" width="158" height="202" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<desc>type="dropShadow" x="0" y="14" size="24" spread="0" color="0,0,0,0.25" blend="normal"</desc>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="0" dy="14"/>
+<feGaussianBlur stdDeviation="12"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<path id="path0_fill" d="M 0 41.1974L 79.4397 301.207L 89.9924 0L 0 41.1974Z"/>
+</defs>
+</svg>
