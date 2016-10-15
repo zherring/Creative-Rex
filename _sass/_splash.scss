@@ -296,8 +296,9 @@ section {
 #work {
     > div { height: 85vh; }
     .c-right {
-        background: url(/img/interval.jpg) no-repeat center left;
-        background-size: 100%;
+        background: url(/img/interval@2x.jpg) no-repeat center left;
+        background-size: 990px;
+        background-position: 2rem 0;
     }
 }
 #platform {
