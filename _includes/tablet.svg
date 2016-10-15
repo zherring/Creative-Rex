@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="82px" height="92px" viewBox="0 0 82 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 40.2 (33826) - http://www.bohemiancoding.com/sketch -->
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
     <title>tablet</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <rect id="path-1" x="0" y="0" width="82" height="92" rx="1"></rect>
+        <path d="M56.5580872,0 L80.9928008,0 C81.5490616,0 82,0.451613724 82,1.00184792 L82,77.4490842 L56.5580872,92 L56.5580872,-3.33066907e-16 Z" id="path-1"></path>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="tablet">
+            <rect id="Mask-Copy-2" fill="#FF087E" x="0" y="0" width="82" height="92" rx="1"></rect>
+            <rect id="Mask-Copy-3" fill="#FF087E" x="0" y="0" width="82" height="92" rx="1"></rect>
+            <rect id="Rectangle-4-Copy-3" fill="#B526A5" x="5.72093023" y="5.71794872" width="70.5581395" height="80.2051282" rx="1"></rect>
+            <path d="M56.2923597,92 L80.9928008,92 C81.5588176,92 82,91.5514574 82,90.9981521 L82,1.00184792 C82,0.451613724 81.5490616,0 80.9928008,0 L1.00719922,0 C0.441182375,0 0,0.44854259 0,1.00184792 L0,54.4207727 L56.2923597,92 Z" id="Combined-Shape" fill="#565656" style="mix-blend-mode: darken;" opacity="0.100000001"></path>
             <mask id="mask-2" fill="white">
                 <use xlink:href="#path-1"></use>
             </mask>
-            <use id="Mask" fill="#FF087E" xlink:href="#path-1"></use>
-            <rect id="Rectangle-4-Copy-6" fill="#FF087E" mask="url(#mask-2)" x="0" y="-2" width="82" height="92" rx="1"></rect>
-            <rect id="Rectangle-4-Copy-3" fill="#B526A5" mask="url(#mask-2)" x="5.72093023" y="5.71794872" width="70.5581395" height="80.2051282" rx="1"></rect>
-            <polygon id="Path-3-Copy-6" fill="#565656" style="mix-blend-mode: darken;" opacity="0.100000001" mask="url(#mask-2)" transform="translate(25.499388, 67.744914) rotate(176.000000) translate(-25.499388, -67.744914) " points="-63.2392797 -4.79354713 124.292515 140.283376 -73.2937393 140.283376"></polygon>
-            <polygon id="Path-3-Copy-5" fill="#565656" style="mix-blend-mode: darken;" opacity="0.229999989" mask="url(#mask-2)" transform="translate(135.311309, 44.544045) rotate(90.000000) translate(-135.311309, -44.544045) " points="92.6850825 -34.2091765 182.767264 123.297267 87.855354 123.297267"></polygon>
+            <use id="Combined-Shape" fill="#565656" style="mix-blend-mode: darken;" opacity="0.229999989" xlink:href="#path-1"></use>
         </g>
     </g>
 </svg>

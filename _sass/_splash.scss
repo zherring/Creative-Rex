@@ -5,6 +5,7 @@ $pink: #FF087D;
 $blue: #240099;
 $blue-lg: #EAE9F5;
 $white: #fff;
+$offwhite: #F6F6F6;
 @mixin specialfont { font-family: "roboto", helvetica, arial, san-serif; }
 @mixin shadow {box-shadow: 0px 14px 24px rgba(0, 0, 0, 0.25); }
 
@@ -277,7 +278,18 @@ section {
 }
 
 
-#platform { height: 85vh;
+#platform {
+    height: 85vh;
+    width: 100%;
+    background: $offwhite;
+
+    > div {
+        background: $white;
+        padding: 1rem;
+        //width: 40rem;
+    }
+    #platform-ico { align-items: center; justify-content: space-around; margin-bottom: 1rem;}
+    // svg { width: 7rem; }
 
 }
 
@@ -291,6 +303,7 @@ section {
         }
 
     }
+
 
 
 @media (min-width: 1150px) {
