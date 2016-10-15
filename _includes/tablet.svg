@@ -4,18 +4,17 @@
     <title>tablet</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <path d="M56.5580872,0 L80.9928008,0 C81.5490616,0 82,0.451613724 82,1.00184792 L82,77.4490842 L56.5580872,92 L56.5580872,-3.33066907e-16 Z" id="path-1"></path>
+        <path d="M56.5580872,3.33066907e-16 L80.9928008,3.33066907e-16 C81.5490616,3.33066907e-16 82,0.451613724 82,1.00184792 L82,77.4490842 L56.5580872,92 L56.5580872,0 L56.5580872,3.33066907e-16 Z" id="path-1"></path>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="tablet">
-            <rect id="Mask-Copy-2" fill="#FF087E" x="0" y="0" width="82" height="92" rx="1"></rect>
-            <rect id="Mask-Copy-3" fill="#FF087E" x="0" y="0" width="82" height="92" rx="1"></rect>
-            <rect id="Rectangle-4-Copy-3" fill="#B526A5" x="5.72093023" y="5.71794872" width="70.5581395" height="80.2051282" rx="1"></rect>
-            <path d="M56.2923597,92 L80.9928008,92 C81.5588176,92 82,91.5514574 82,90.9981521 L82,1.00184792 C82,0.451613724 81.5490616,0 80.9928008,0 L1.00719922,0 C0.441182375,0 0,0.44854259 0,1.00184792 L0,54.4207727 L56.2923597,92 Z" id="Combined-Shape" fill="#565656" style="mix-blend-mode: darken;" opacity="0.100000001"></path>
+            <rect id="base" fill="#FF087E" x="0" y="0" width="82" height="92" rx="1"></rect>
+            <rect id="screen" fill="#B526A5" x="5.72093023" y="5.71794872" width="70.5581395" height="80.2051282" rx="1"></rect>
+            <path d="M56.2923597,92 L80.9928008,92 C81.5588176,92 82,91.5514574 82,90.9981521 L82,1.00184792 C82,0.451613724 81.5490616,0 80.9928008,0 L1.00719922,0 C0.441182375,0 0,0.44854259 0,1.00184792 L0,54.4207727 L56.2923597,92 L56.2923597,92 Z" id="left-shard" fill="#565656" style="mix-blend-mode: darken;" opacity="0.100000001"></path>
             <mask id="mask-2" fill="white">
                 <use xlink:href="#path-1"></use>
             </mask>
-            <use id="Combined-Shape" fill="#565656" style="mix-blend-mode: darken;" opacity="0.229999989" xlink:href="#path-1"></use>
+            <use id="right-shard" fill="#565656" style="mix-blend-mode: darken;" opacity="0.229999989" xlink:href="#path-1"></use>
         </g>
     </g>
 </svg>
