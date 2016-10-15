@@ -2,6 +2,7 @@
 $gray-dk: #555555;
 $gray-lg: #B4B2B3;
 $pink: #FF087D;
+$green: #22F991;
 $blue: #240099;
 $blue-lg: #EAE9F5;
 $white: #fff;
@@ -102,6 +103,7 @@ h1, h2 {
   box-shadow: 0em 0 0 $pink inset, 0em 0 0 $pink inset, 0 0 0 rgba(0,0,0,.1);
   -webkit-transition: .2s ease-out;
   transition: .2s ease-out;
+  cursor: pointer;
  $white-space: nowrap;
 }
 .btn:hover {
@@ -291,6 +293,13 @@ section {
 }
 
 
+#work {
+    > div { height: 85vh; }
+    .c-right {
+        background: url(/img/interval.jpg) no-repeat center left;
+        background-size: 100%;
+    }
+}
 #platform {
     height: 85vh;
     width: 100%;
@@ -309,17 +318,38 @@ section {
 
 #mission-statement {
     height: 85vh;
-    background:linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 49%), url("../img/laptop-bg.jpg");
+    background: url("../img/laptop-bg.jpg");
     background-size: cover;
     justify-content: flex-start;
+    position: relative;
     //box-shadow: inset 0 -1rem 40rem $white;
 
     //background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 49%);
 
+    .btn {
+        color: $green;
+        border-color: $green;
+        display: block;
+        box-shadow: 0em 0 0 $green inset, 0em 0 0 $green inset, 0 0 0 rgba(0, 0, 0, 0.1);
+
+        &:hover {
+            color: $white;
+            box-shadow: -25em 0 0 $green inset, 25em 0 0 $green inset, 0 0 0 rgba(0, 0, 0, 1);
+        }
+    }
+    &:after {
+        width: 100%;
+        height: 15vmin;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        background: linear-gradient(to top, rgba(255,255,255,1) 18%,rgba(255,255,255,0) 100%),
+        }
+
     #m-content {
         background: $white;
         height: 85vh;
-        padding: 1rem;
+        padding: 1.5rem;
         }
 
     }
