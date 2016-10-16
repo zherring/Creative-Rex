@@ -378,15 +378,54 @@ section {
     width: 100%;
     background: $offwhite;
     padding: 4em .75rem;
+    position: relative;
+    overflow: hidden;
     @media screen and (max-width: 55rem) {
       height: auto;
     }
 
+    .fancy-hover {
+      &::after,
+      &::before {
+        pointer-events: none;
+        content: '';
+        position: absolute;
+        display: block;
+        border-radius: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(.1) translateZ(0);
+        z-index: 1;
+      }
+      &::after {
+        width: 150vw;
+        height: 150vw;
+        background: $pink;
+        transition: .5s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+        z-index: 1;
+      }
+      &::before {
+        width: 75vw;
+        height: 75vw;
+        background: mix(#2B059E, $pink, 50%);
 
-    > div {
-        background: $white;
-        padding: 0 2.25rem 2rem 2.25rem;
-        //width: 40rem;
+        transition: .9s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+        transition-delay: .075s;
+        z-index: 2;
+      }
+      &:hover {
+        &::after,
+        &::before {
+          transform: translate(-50%, -50%) scale(1) translateZ(0);
+          transition-delay: .1s;
+        }
+      }
+    }
+    .card {
+      background: $white;
+      padding: 0 2.25rem 2rem 2.25rem;
+      position: relative;
+      z-index: 10;
     }
     #platform-ico { align-items: center; justify-content: space-around;
       svg {margin: 1rem .5rem;}
