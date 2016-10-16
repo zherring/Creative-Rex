@@ -24,6 +24,7 @@ element {
 .flex { display: flex; justify-content: space-around; align-items: stretch; flex-wrap: wrap; }
 .fl-col { flex-direction: column; }
 .fl-rw { flex-direction: row; }
+.fl-center { align-items: center; justify-content: center; }
 .fl-nowrap { flex-wrap: nowrap; }
 .rw-4 {
     max-width: 100%;
@@ -294,11 +295,14 @@ section {
 
 
 #work {
-    > div { height: 85vh; }
+    > div { height: 85vh; flex-grow: 1; }
+    .c-left { min-width: 25em; padding: 1.5rem; }
     .c-right {
         background: url(/img/interval@2x.jpg) no-repeat center left;
         background-size: 990px;
         background-position: 2rem 0;
+        max-width: inherit;
+
     }
 }
 #platform {
