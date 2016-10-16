@@ -25,7 +25,14 @@ element {
 .fl-col { flex-direction: column; }
 .fl-rw { flex-direction: row; }
 .fl-center { align-items: center; justify-content: center; }
-.fl-nowrap { flex-wrap: nowrap; }
+.fl-nowrap { flex-wrap: nowrap;
+  @media screen and (max-width: 50rem) {
+    flex-wrap: wrap;
+    .flex {
+      min-width: 50%;
+    }
+  }
+}
 .rw-4 {
     max-width: 100%;
 
@@ -34,7 +41,7 @@ element {
     // height: 43vh;
     //min-width: 17rem;
     text-align: center;
-    padding: 1rem;
+    padding: 1em 1.5em 3em 1.5rem;
     border: 1px solid $blue-lg;
     border-right: none transparent;
     flex: 1;
@@ -86,12 +93,27 @@ h1, h2 {
     }
 
     h1{
-    text-transform: uppercase;
-    color: $gray-lg;
-    strong { color: #FFF; font-weight: bold; }
+      text-transform: uppercase;
+      color: $gray-lg;
+      @media screen and (max-width: 40rem) {
+        font-size: 1.75em;
+      }
+      strong { color: #FFF; font-weight: bold; }
+
+      @media screen and (max-width: 50rem) {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+
     }
 
     h2, h3, h4 { color: $gray-dk; }
+    h2 {
+      @media screen and (max-width: 55rem) {
+        font-size: 1.75em;
+        color: darken($gray-dk, 15%);
+      }
+    }
     h3 { font-weight: bold; font-size: 1em;}
 
 .btn {
@@ -105,7 +127,9 @@ h1, h2 {
   -webkit-transition: .2s ease-out;
   transition: .2s ease-out;
   cursor: pointer;
- $white-space: nowrap;
+  //$white-space: nowrap;
+  margin-left: .5em;
+  margin-right: .5em;
 }
 .btn:hover {
   color: $white;
@@ -123,22 +147,21 @@ h1, h2 {
     @include shadow;
     overflow: hidden;
     transition: all .2s ease-in-out;
-    nav { align-items: center; }
+    nav { align-items: center;}
     &.show { top: 0rem; }
     #logo { overflow: hidden; height: auto; height: 3.5rem; transition: all .15s ease-in-out;
         svg { transition: all .15s ease-in-out; }
         a { opacity: 1; }
         &:hover svg { transform: rotateZ(-10deg); }
     }
-    a:not(.btn) { color: $gray-dk; text-decoration: none; font-size: .85rem; font-weight: bold; opacity: .7; padding: 1.2rem .5rem; transition: all .1s ease-in-out;
+    a:not(.btn) { color: $gray-dk; text-decoration: none; font-size: .85rem; font-weight: bold; opacity: .7; padding: 1.2rem .75rem; transition: all .1s ease-in-out;
       &:hover { background: lighten($gray-dk, 60); color: black; }
     }
-    .btn { padding: .35rem;  margin-left: .75rem; font-size: .75rem;
-    &:hover {
-        //background: black;
-        //color: black;
-        //border-color: black;
-     }
+    .btn { padding: .35rem;  margin: .75rem 0 .75rem .75rem; font-size: .75rem;}
+    @media screen and (max-width: 35rem) {
+      #logo {
+        display: none;
+      }
     }
 }
 
@@ -148,10 +171,11 @@ h1, h2 {
 #splash {
     @include background-opacity(#1D1F1F, 0.9);
     color: #FFF;
-    height: 85vh;
+    min-height: 85vh;
     max-height: 65rem;
     position: relative;
     text-align: center;
+
     aside { text-transform: uppercase; color: $gray-lg; }
     svg { transform: rotate(-11deg); }
     .btn { min-width: 15rem; padding: 1rem;
@@ -160,10 +184,15 @@ h1, h2 {
     nav a { font-weight: 300; }
     strong { color: #fff; font-style: italic;}
     nav { width: 70%; @include specialfont;
+        white-space: nowrap;
+        @media screen and (max-width: 40rem) {
+          padding: 1em 0;
+        }
         a {
             font-size: $small-font-size;
             // font-weight: bold;
             color: $gray-lg;
+            padding: .75em;
             &:hover { color:$white;  }
             }
 
@@ -174,6 +203,11 @@ h1, h2 {
         left: -4rem;
         bottom: 0;
      }
+
+    // header spacing
+    header {
+      padding-top: 5em;
+    }
     }
 
 .color-stripe {
@@ -215,6 +249,9 @@ section {
     > * { max-width: 48rem; }
     }
 
+#specialize {
+  padding-top: 2rem;
+}
 #contact {
   padding: 10vh 0 50vh 0;
   background-image: url(/img/charcoal.svg);
@@ -239,7 +276,7 @@ section {
     width: 100%;
     &:focus,
     &:valid {
-      border-bottom-color: lighten( $pink, 10%);
+      border-color: lighten( $pink, 10%);
     }
     &::-webkit-input-placeholder {color: transparent;}
     &:-moz-placeholder  {color: transparent;}
@@ -260,13 +297,24 @@ section {
     text-align: left;
   }
   button { background: none; width: 91%; font-size: 1rem; cursor: pointer; }
-  input, textarea {
+  input {
     &:focus,
     &:valid {
       & ~ label {
         color: lighten( $pink, 10%);
         font-size: .5em;
         transform: translate(3px, -14px);
+        font-weight: bold;
+      }
+    }
+  }
+  textarea {
+    &:focus,
+    &:valid {
+      & ~ label {
+        color: lighten( $pink, 10%);
+        font-size: .5em;
+        transform: translate(-3px, -22px);
         font-weight: bold;
       }
     }
@@ -295,13 +343,19 @@ section {
 
 
 #work {
-    > div { height: 85vh; flex-grow: 1; }
-    .c-left { min-width: 25em; padding: 1.5rem; }
+    > div { min-height: 55vh; flex-grow: 1; }
+    .c-left {
+      min-width: 25em; padding: 1.5rem;
+      @media screen and (max-width: 50rem) {
+        min-width: auto;
+      }
+    }
     .c-right {
         background: url(/img/interval@2x.jpg) no-repeat center left;
         background-size: 990px;
         background-position: 2rem 0;
         max-width: inherit;
+        min-height: 42rem;
 
     }
 }
@@ -309,6 +363,10 @@ section {
     height: 85vh;
     width: 100%;
     background: $offwhite;
+    padding: 4em .75rem;
+    @media screen and (max-width: 55rem) {
+      height: auto;
+    }
 
 
     > div {
@@ -316,17 +374,19 @@ section {
         padding: 1rem;
         //width: 40rem;
     }
-    #platform-ico { align-items: center; justify-content: space-around; margin-bottom: 1rem;}
+    #platform-ico { align-items: center; justify-content: space-around;
+      svg {margin: 1rem .5rem;}
+    }
     // svg { width: 7rem; }
 
 }
 
 #mission-statement {
-    height: 85vh;
     background: url("../img/laptop-bg.jpg");
     background-size: cover;
     justify-content: flex-start;
     position: relative;
+
     //box-shadow: inset 0 -1rem 40rem $white;
 
     //background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 49%);
@@ -348,14 +408,19 @@ section {
         content: "";
         position: absolute;
         bottom: 0;
-        background: linear-gradient(to top, rgba(255,255,255,1) 18%,rgba(255,255,255,0) 100%),
+        background: linear-gradient(to top, rgba(255,255,255,1) 18%,rgba(255,255,255,0) 100%);
+        pointer-events: none;
         }
 
     #m-content {
         background: $white;
-        height: 85vh;
-        padding: 1.5rem;
+        min-height: 85vh;
+        padding: 5rem 2rem;
+          @media screen and (max-width: 30rem) {
+            min-height: 0;
+          }
         }
+
 
     }
 
