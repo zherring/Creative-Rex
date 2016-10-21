@@ -80,7 +80,7 @@ element {
     }
 }
 
-.dark { background: #1D1F1F; }
+.dark { background: #1D1F1F; color: lighten($gray-dk, 30) }
 .light { background: #FFF; }
 .light .gray, .light .grey { color: $gray-dk; }
 .dark .gray, .dark .grey { color: $gray-lg; }
