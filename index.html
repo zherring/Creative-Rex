@@ -110,7 +110,7 @@ splash-shard-right.svg %} -->
     <div id="m-content" class="c-left shadow">
         <h2>Compelling design is the result of asking the right questions</h2>
         <p>We use research, user testing and and smart work to find our clients the best solutions.</p>
-        <p>One more sentence here, maybe about what we do and why. Methodology etc.</p>
+        <p>Curious about our process? Drop us a line and let's talk about what user research can do for you.</p>
         <!-- <a class="btn btn-o">Grab our DIY UX research kit</a> -->
     </div>
 
@@ -123,58 +123,50 @@ splash-shard-right.svg %} -->
     <h2>Let&#39;s talk about your project</h2>
     <p></p>
 
-    <form method="post" enctype="text/plain" action="../res/php/contact-form.php" id="contact-form">
+    <div class="flex fl-rw rw-2">
+        <div class="flex fl-col fl-center">
+            {% include /contact-mail.svg %}
+            <p>We love talking Product. So much so that we want to talk to you about yours. No commitment, no fees just a free 30 minute consultation.</p>
+            <a class="btn btn-o" href="mailto:contact@creativerex.co">Email Us</a>
+        </div>
+        <div class="flex fl-col fl-center">
+            {% include /contact-tw.svg %}
+            <p>Hey, we love Twitter too! If you have a design questions that fit in 140 characters, drop us a line. We’ll answer in a Tweet Storm or less.</p>
+            <a class="btn btn-o btn-blue" href="https://twitter.com/intent/tweet?text=@creativerexco">Tweet Us</a>
+        </div>
+    </div>
+
+
+<!--
+<form method="post" enctype="text/plain" action="../res/php/contact-form.php" id="contact-form">
         <div class="flex fl-rw rw-2">
             <div>
-                <input type="text" id="first_name" placeholder="first name" required></input>
+                <input type="text" id="first_name" name="first_name" placeholder="first name" required>
                 <label for="first_name">first name</label>
             </div>
             <div>
-                <input type="text" id="last_name" placeholder="last name" required></input>
+                <input type="text" id="last_name" name="last_name" placeholder="last name" required>
                 <label for="last_name">last name</label>
             </div>
             <div>
-                <input type="text" id="email" placeholder="email" required></input>
+                <input type="text" id="email" name="email" placeholder="email" required>
                 <label for="email">email</label>
             </div>
-            <!-- <div>
-                <input type="text" id="phone" placeholder="phone" required></input>
-                <label for="phone">phone</label>
-            </div> -->
+
             <div>
-                <input type="text" id="phone" placeholder="phone" required></input>
+                <input type="text" id="phone" name="phone" placeholder="phone" required>
                 <label for="phone">phone</label>
             </div>
 
             <div id="message">
-                <textarea type="textbox" id="content" placeholder="message" required></textarea>
+                <textarea type="textbox" id="content" name="content" placeholder="message" required></textarea>
                 <label for="content">message</label>
             </div>
-            <!-- <div class="g-recaptcha" data-sitekey="6LcRiQkUAAAAAHDtcqfmSRPgAV8ndRfP6_ZjK2Hj"></div> -->
 
-            <button action="send" class="btn btn-o">send</a>
+            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-o">send</a>
         </div>
-    </form>
+    </form> -->
 
     <div id="form-messages"></div>
 </section>
 <footer></footer>
-<!--
-<section class="home">
-  <h2 class="page-heading">Posts</h2>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</section> -->

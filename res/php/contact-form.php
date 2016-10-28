@@ -29,29 +29,33 @@
     // var_dump($_POST);
 
 
+    // var_dump($_POST);
+
+
     var_dump($_POST);
+    var_dump($_REQUEST);
 
-
-    // var_dump($_REQUEST);
-
+    // error_reporting( E_ERROR );
+    //
     // $fields = array();
-    //     $fields["to"] = strip_tags("z.herring@gmail.com");
-    //     $fields["first_name"] = strip_tags($_REQUEST['first_name']);
-    //     $fields["last_name"] = strip_tags($_REQUEST['last_name']);
-    //     $fields["email"] = strip_tags($_REQUEST['email']);
-    //     $fields["phone"] = strip_tags($_REQUEST['phone']);
-    //     $fields["message"] = strip_tags($_REQUEST['content']);
+    // $fields["to"] = strip_tags("z.herring@gmail.com");
+    // $fields["first_name"] = strip_tags($_POST['first_name']);
+    // $fields["last_name"] = strip_tags($_POST['last_name']);
+    // $fields["email"] = strip_tags($_POST['email']);
+    // $fields["phone"] = strip_tags($_POST['phone']);
+    // $fields["message"] = strip_tags($_POST['content']);
     //
-    //     $headers = "From: " . $fields["email"];
-    //     $subject = "Contact Form Result from " . $fields['first_name'] . " " . $fields['last_name'];
-    //     // var_dump($_REQUEST);
+    // $headers = "From: " . $fields["email"];
+    // $subject = "Contact Form Result from " . $fields['first_name'] . " " . $fields['last_name'];
+    // // var_dump($_POST);
     //
-    //     $body = "Here is what was sent:\n\n";
-    //     foreach($fields as $a => $b) {
-    //         $body .= sprintf("%20s: %s\n",$a,$b);
-    //     }
+    // $body = "Here is what was sent:\n\n";
+    // foreach($fields as $a => $b) {
+    //     $body .= sprintf("%20s: %s\n",$a,$b);
+    // }
     //
-    //     $send = mail($fields["to"], $subject, $body, $headers);
+    // $send = mail($fields["to"], $subject, $body, $headers);
     //
-    //     header("location: /contacted.html#contact");
+    // header("location: /contacted.html#contact");
+
 ?>

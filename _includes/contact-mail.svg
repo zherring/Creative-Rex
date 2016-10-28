@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="223px" height="159px" viewBox="0 0 223 159" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>contact-mail</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="contact-mail">
+            <rect id="Rectangle-2-Copy-2" fill="#FF0880" x="0" y="0" width="222" height="158" rx="4.79999971"></rect>
+            <polygon id="Path-12" fill="#DE158E" points="115.841309 158.009766 222.108643 36.8789062 221.986084 117.348877 133.401123 157.971436"></polygon>
+            <polygon id="Path-11" fill="#DE158E" points="71.2192383 126.033203 99.3720703 157.956976 89.1279297 157.956976 50.8969727 139.722656"></polygon>
+            <path d="M222,36.9815213 L115.956907,158 L99.7436928,158 L0,44.0903048 L0,4.79326214 C0,2.14601656 2.14371373,0 4.7912365,0 L217.208763,0 C219.85489,0 222,2.14363712 222,4.79326214 L222,36.9815213 L222,36.9815213 Z" id="Combined-Shape" fill="#D41893"></path>
+            <polygon id="Combined-Shape" fill="#BA21A0" points="99.1241391 158 71 125.881557 222 12.1015448 222 38.5645446 117.34404 158"></polygon>
+            <path d="M90.0144128,158 L1,117.269566 L1,153.206738 C1,155.856363 3.14510965,158 5.7912365,158 L90.0144128,158 L90.0144128,158 Z" id="Combined-Shape" fill="#EE0F87"></path>
+            <polygon id="Combined-Shape" fill="#CF1A94" points="89.0144128 158 50.9270879 139.572336 27.798445 158"></polygon>
+            <path d="M133.247496,158 L222,117.389407 L222,153.206738 C222,155.853983 219.856286,158 217.208763,158 L133.247496,158 L133.247496,158 Z" id="Combined-Shape" fill="#CF1994"></path>
+        </g>
+    </g>
+</svg>
