@@ -7,10 +7,8 @@ layout: default
         <a href="#splash">{% include /cr-logo.svg %}</a>
     </div>
     <nav class="flex fl-rw">
-        <a href="#specialize">What We Offer</a>
-        <!-- <a href="#work">Recent Work</a> -->
-        <a href="#mission-statement">Mission Statement</a>
-        <a href="#platform">Platforms</a>
+        {% include site-menu.html %}
+        <a href="/blog">Blog</a>
         <a href="#contact" class="btn btn-ol">Contact</a>
     </nav>
 </section>
@@ -27,10 +25,7 @@ layout: default
     <a href="#contact" class="btn btn-ol">Let&#39;s talk about your project</a>
 
     <nav class="flex fl-rw upper upper gray">
-        <a href="#specialize">What We Offer</a>
-        <!-- <a href="#work">Recent Work</a> -->
-        <a href="#mission-statement">Mission Statement</a>
-        <a href="#platform">Platforms</a>
+        {% include site-menu.html %}
     </nav>
 
     <div id="vid-container">
@@ -119,7 +114,7 @@ splash-shard-right.svg %} -->
     </div>
 </section>
 
-<section id="contact" class="dark">
+<footer id="contact" class="dark">
     <h2>Let&#39;s talk about your project</h2>
     <p></p>
 

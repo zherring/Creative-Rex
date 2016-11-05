@@ -1,0 +1,11 @@
+.blog {
+
+    #container { justify-content: flex-start; }
+    #left { width: 4em; background: $offwhite;
+        a { }
+        svg { width: 80%; }
+    }
+
+    #center { width: 32em; }
+    #right { width: 19.5em; }
+}

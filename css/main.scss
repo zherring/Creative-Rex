@@ -41,6 +41,6 @@ body { font-family: "roboto", "helvetica", "arial", san-serif; font-size: $base-
 // }
 
 // Import partials from the `minima` theme.
-@import "splash";
+@import "splash", "blog";
 
 a { text-decoration: none; color: $blue; }

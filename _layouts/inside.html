@@ -3,11 +3,22 @@
 
   {% include head.html %}
 
-  <body>
-    <div id="container">
+  <body class="blog">
+    <div id="container" class="flex fl-row">
+        <div id="left">
+            <a href="{{ "/blog" | prepend: site.baseurl }}" class="flex fl-col fl-center">{% include cr-logo.svg %}
+            {% if page.id %}
+                Test
+            {% endif %}
+            </a>
+        </div>
 
-        {{ content }}
-
+        <div id="center">
+            {{ content }}
+        </div>
+        <div id="right">
+            <p>Share: Facebook  Twitter  Email
+        </div>
     </div>
     {% include footer.html %}
   </body>

@@ -21,6 +21,11 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://creativerex.co" # the base hostname & protocol for your site
 twitter_username:   CreativeRexCo
 dribbble_username:  CreativeRexCo
+scope:
+    path: ""      # empty string for all files
+    type: posts   # limit to posts
+    values:
+        is_post: true # automatically set is_post=true for all posts
 
 # Build settings
 markdown: kramdown

@@ -270,11 +270,11 @@ section {
 #specialize {
   padding-top: 2rem;
 }
-#contact {
 
+footer.dark {
   padding: 10vh 0 0 0;
   background-image: url(/img/charcoal.svg);
-  background-position: center 42em;
+  background-position: center bottom -20em;
   background-repeat: no-repeat;
   background-color: #0A0F12;
 
@@ -492,8 +492,6 @@ section {
 
 
     }
-
-
 
     .sg-question-set {
         overflow: hidden;
