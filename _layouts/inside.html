@@ -4,23 +4,47 @@
   {% include head.html %}
 
   <body class="blog">
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
     <div id="container" class="flex fl-row">
-        <div id="left">
-            <a href="{{ "/blog" | prepend: site.baseurl }}" class="flex fl-col fl-center">{% include cr-logo.svg %}
+        <a id="left" href="{{ "/blog" | prepend: site.baseurl }}" class="flex fl-col fl-center">
+                {% include cr-logo.svg %}
             {% if page.id %}
-                Test
+                <span>Back</span>
             {% endif %}
-            </a>
-        </div>
+        </a>
+
 
         <div id="center">
             {{ content }}
         </div>
         <div id="right">
-            <p>Share: Facebook  Twitter  Email
+            <!-- {% include social.html %} -->
+            {% if page.id %}
+                <span class="gray small">Share:</span><br />
+                <!-- TWITTER -->
+                <a
+                    href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}"
+                    data-size="small">
+                    <i class="fa fa-twitter"></i></a>
+                <!-- FACEBOOK -->
+                <div class="fb-share" data-href="https://developers.facebook.com/docs/plugins/" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}">
+                    <i class="fa fa-facebook"></i></a>
+                </div>
+                <!-- MAILTO -->
+                <a href="mailto:?body={{ site.url }}{{ page.url }}">
+                    <i class="fa fa-envelope" aria-hidden="true"></i></a>
+            {% endif %}
         </div>
     </div>
     {% include footer.html %}
+    {% include after-scripts.html %}
   </body>
 
 </html>

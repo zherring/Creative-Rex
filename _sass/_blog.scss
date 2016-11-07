@@ -1,11 +1,32 @@
 .blog {
 
     #container { justify-content: flex-start; }
-    #left { width: 4em; background: $offwhite;
+    #left { width: 4em; background: $offwhite; position: relative; flex-grow: auto;
         a { }
-        svg { width: 80%; }
+        svg { width: 3em; position: fixed; top: 0; }
+        span { position: fixed; bottom: 0; }
     }
 
-    #center { width: 32em; }
-    #right { width: 19.5em; }
+    #center { width: 35em; text-align: left; padding: 1rem 2rem; }
+    #right { min-width: 8em; flex-grow: auto; justify-content: flex-start; text-align: left; }
 }
+
+.soc-btn {
+    font-size: 11px;
+    vertical-align: middle;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    height: 20px;
+    padding: 3px 8px 1px 6px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    box-sizing: border-box;
+    &.email { background-color: red; }
+    span {
+        padding-left: 4px;
+        padding-right: 4px;}
+}
+
+.fb-share { display: inline;}
