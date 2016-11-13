@@ -72,10 +72,10 @@
     var contentHeight = $(".post").outerHeight();
     var stopHeight = contentHeight - browserHeight;
 
-    $(function() {
-        if (contentHeight < browserHeight ) {
-            $('.next').css("position", "absolute").css("bottom", -stopHeight);
-        } else {
+    $(window).on("load resize", function () {
+            if (contentHeight < browserHeight || $("body").scrollTop() > stopHeight  ) {
+                $('.next').css("position", "absolute").css("bottom", -stopHeight);
+            }
             $(window).scroll(function() {
                 if ($(this).scrollTop() > stopHeight){
                     $('.next').css("position", "absolute").css("bottom", -stopHeight);
@@ -84,8 +84,7 @@
                     $('.next').css("position", "fixed").css("bottom", "");
                 }
             });
-        }
-    });
+        });
     </script>
   </body>
 
