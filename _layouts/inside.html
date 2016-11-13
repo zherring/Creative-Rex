@@ -72,13 +72,19 @@
     var contentHeight = $(".post").outerHeight();
     var stopHeight = contentHeight - browserHeight;
 
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > stopHeight){
+    $(function() {
+        if (contentHeight < browserHeight ) {
             $('.next').css("position", "absolute").css("bottom", -stopHeight);
-          }
-          else{
-            $('.next').css("position", "fixed").css("bottom", "");
-          }
+        } else {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > stopHeight){
+                    $('.next').css("position", "absolute").css("bottom", -stopHeight);
+                }
+                else{
+                    $('.next').css("position", "fixed").css("bottom", "");
+                }
+            });
+        }
     });
     </script>
   </body>
