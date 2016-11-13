@@ -27,6 +27,7 @@ element {
 .fl-rw { flex-direction: row; }
 .fl-center { align-items: center; justify-content: center; }
 .fl-between { justify-content: space-between; }
+.fl-start { justify-content: flex-start; }
 .fl-nowrap { flex-wrap: nowrap;
   @media screen and (max-width: 50rem) {
     flex-wrap: wrap;
@@ -94,6 +95,7 @@ element {
 .c-right { flex-grow: 1; width: auto; }
 .small { font-size: .6em;}
 .gray { color: $gray-lg; }
+.pink { color: $pink; }
 //
 h1, h2, h3, h4, h5, h6 {
     font-family: "Roboto", helvetica, san-serif;
@@ -105,7 +107,8 @@ h1, h2 {
     font-weight: 300;
     }
 
-    h1{
+#splash h1
+    {
       text-transform: uppercase;
       color: $gray-lg;
       @media screen and (max-width: 40rem) {

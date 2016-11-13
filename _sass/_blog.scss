@@ -1,15 +1,47 @@
 .blog {
 
-    #container { justify-content: flex-start; }
+    #blog-start { font-size: 1rem; color: $gray-lg; text-transform: uppercase; font-weight: bold; padding: 1rem 0;}
+    h1 { }
+    a { color: $gray-dk; text-decoration: none; }
+    #container { justify-content: flex-start;
+        article { border-bottom: 1px $gray-lg solid; padding: 3rem 0;
+        > p.small { margin-bottom: -2rem; }
+        }
+    }
+
     #left { width: 4em; background: $offwhite; position: relative; flex-grow: auto;
         a { }
         svg { width: 3em; position: fixed; top: 0; }
-        span { position: fixed; bottom: 0; }
+        span { position: fixed; bottom: -10rem; transition: all .2s ease-in-out;
+        }
+        &:hover span { bottom: 1rem; }
+
     }
 
     #center { width: 35em; text-align: left; padding: 1rem 2rem; }
-    #right { min-width: 8em; flex-grow: auto; justify-content: flex-start; text-align: left; }
+    #right { flex-grow: 1; width: calc(100vw - 5em); justify-content: flex-start; text-align: left;
+        > div > div { padding-left: 1.5rem; }
+        #content {
+            width: 35rem;
+            a { color: $pink; }
+        }
+        #social {  }
+    }
+
+    footer.dark {
+        padding-top: 2rem;
+        > div { padding: 0 1.5rem; }
+        h2 { font-size: 1.75rem; margin-top: 0;}
+        h2, a { color: $white; }
+        a { padding: .5rem 0; opacity: .8;
+        :hover { opacity: 1; }
+        }
+    }
+
+    .share { position: fixed; top: 1rem; }
+    .next { position: fixed; bottom: 1rem; }
 }
+
 
 .soc-btn {
     font-size: 11px;
