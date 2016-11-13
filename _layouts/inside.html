@@ -69,15 +69,12 @@
 
     /// sticky blog
     var browserHeight = window.innerHeight;
-    var totalHeight = document.body.clientHeight;
-    var footerHeight = $("footer").outerHeight();
     var contentHeight = $(".post").outerHeight();
     var stopHeight = contentHeight - browserHeight;
 
     $(window).scroll(function() {
         if ($(this).scrollTop() > stopHeight){
             $('.next').css("position", "absolute").css("bottom", -stopHeight);
-            console.log("Fired", browserHeight, totalHeight, footerHeight, contentHeight, stopHeight, ($(this).scrollTop()));
           }
           else{
             $('.next').css("position", "fixed").css("bottom", "");
