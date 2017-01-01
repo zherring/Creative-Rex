@@ -176,6 +176,7 @@ h1, h2 {
         svg { transition: all .15s ease-in-out; }
         a { opacity: 1; }
         &:hover svg { transform: rotateZ(-10deg); }
+        svg g#Path-3-Copy-9 { display: none; }
     }
     a:not(.btn) { color: $gray-dk; text-decoration: none; font-size: .85rem; font-weight: bold; opacity: .7; padding: 1.2rem .75rem; transition: all .1s ease-in-out;
       &:hover { background: lighten($gray-dk, 60); color: black; }

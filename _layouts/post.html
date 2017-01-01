@@ -11,5 +11,19 @@ layout: inside
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
-
+  <div>
+      <span class="gray small">Share:</span>
+      <!-- TWITTER -->
+      <a
+          href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}"
+          data-size="small">
+          <i class="fa fa-twitter"></i></a>
+      <!-- FACEBOOK -->
+      <div class="fb-share" data-href="https://developers.facebook.com/docs/plugins/" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}">
+          <i class="fa fa-facebook"></i></a>
+      </div>
+      <!-- MAILTO -->
+      <a href="mailto:?body={{ site.url }}{{ page.url }}">
+          <i class="fa fa-envelope" aria-hidden="true"></i></a>
+  </div>
 </article>

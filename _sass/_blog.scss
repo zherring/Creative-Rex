@@ -29,8 +29,9 @@
     }
 
     footer.dark {
+        width: 100%;
         padding-top: 2rem;
-        > div { padding: 0 1.5rem; }
+        > div { padding: 0 1.5rem; text-align: left;     }
         h2 { font-size: 1.75rem; margin-top: 0;}
         h2, a { color: $white; }
         a { padding: .5rem 0; opacity: .8;
